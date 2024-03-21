@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Ecommerce</string>
+    <string name="notifications" />
+    <string name="hello">Hello !</string>
+    <string name="dior">Dior</string>
 </resources>
