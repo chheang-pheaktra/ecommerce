@@ -23,7 +23,7 @@
         android:text="@string/dior"
         android:layout_gravity="center"
         android:layout_margin="120dp"
-
         />
+
 
 </RelativeLayout>
