@@ -1,29 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
-
-        />
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="Find products and branch..."
-        android:layout_margin="50dp"
-
-        />
-    <Button
-        android:id="@+id/myButton"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/greeting_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dior"
-        android:layout_gravity="center"
-        android:layout_margin="120dp"
+        android:text="Hi, Pheak!"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Find products and branch..."
+         android:layout_gravity="center"
         />
 
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+
+            >
+
+            <Button
+                android:id="@+id/button_category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dior" />
+
+            <Button
+                android:id="@+id/button_category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neat" />
+
+            <Button
+                android:id="@+id/button_category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rothe" />
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/banner" />
+
+                <TextView
+                    android:id="@+id/product_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lipstick" />
+
+                <TextView
+                    android:id="@+id/product_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$5.99" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
