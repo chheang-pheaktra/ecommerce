@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ecommerce</string>
+    <string name="notification">Notification</string>
+    <string name="new_release_lipstick_from_us_united_state_product_good_quantity">New release lipstick from US United State product good quantity</string>
+    <string name="date_released_10_12_2024">Date released: 10.12.2024</string>
+    <string name="Detail" />
+    <string name="ViewDail">Detail</string>
 </resources>
