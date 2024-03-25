@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class HomepageActivity extends AppCompatActivity {
     private View searchView;
 
     @SuppressLint("MissingInflatedId")
