@@ -9,4 +9,5 @@
     <item name="product_name1" type="id" />
     <item name="product_price1" type="id" />
     <item name="search_bar" type="id" />
+    <item name="bottom_navigation" type="id" />
 </resources>
