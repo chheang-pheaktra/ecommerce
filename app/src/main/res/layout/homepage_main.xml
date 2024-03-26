@@ -8,14 +8,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_margin="10dp">
+
     <TextView
-        android:layout_margin="20dp"
+        android:layout_margin="30dp"
         android:id="@+id/greeting_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hi, Pheak!"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:translationY="20dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:translationY="-50dp"
+            android:src="@drawable/notification"
+            android:contentDescription="@string/app_name"
+            />
 
     <EditText
         android:layout_marginRight="20dp"

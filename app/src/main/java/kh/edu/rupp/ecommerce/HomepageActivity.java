@@ -1,6 +1,5 @@
 package kh.edu.rupp.ecommerce;
 
-import static kh.edu.rupp.ecommerce.R.id.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,10 +11,6 @@ import androidx.appcompat.widget.SearchView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import androidx.annotation.NonNull;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import android.view.MenuItem;
-
 public class HomepageActivity extends AppCompatActivity {
     private View searchView;
 
