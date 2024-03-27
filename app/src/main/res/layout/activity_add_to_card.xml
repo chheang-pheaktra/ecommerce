@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/back"
+            android:contentDescription="@string/app_name"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_bag"
+            android:contentDescription="@string/app_name"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bg_item"
+                android:layout_marginStart="25dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/lipstick1"
+                android:layout_marginStart="-350dp"
+                android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/lipstick"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="5.99$"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bg_item"
+            android:layout_marginStart="25dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lipstick1"
+            android:layout_marginStart="-350dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/lipstick"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="5.99$"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bg_item"
+            android:layout_marginStart="25dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lipstick1"
+            android:layout_marginStart="-350dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/lipstick"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="5.99$"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:src="@drawable/line"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Total :"
+            android:textSize="25dp"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="17.97$"
+            android:textSize="25dp"
+            android:layout_marginStart="170dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bg_btn"
+            android:layout_marginStart="25dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Order"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-210dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
