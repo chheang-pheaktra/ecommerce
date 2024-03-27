@@ -39,11 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="500sp"
         android:src="@drawable/pic1"
-        />
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:text="@string/ViewDail" />
-        />
 </LinearLayout>
