@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title_text" type="id" />
+    <item name="greeting_text" type="id" />
+    <item name="button_category1" type="id" />
+    <item name="button_category2" type="id" />
+    <item name="button_category3" type="id" />
+    <item name="featured_text" type="id" />
+    <item name="product_name1" type="id" />
+    <item name="product_price1" type="id" />
+    <item name="search_bar" type="id" />
+    <item name="bottom_navigation" type="id" />
+</resources>

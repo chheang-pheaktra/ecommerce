@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/greeting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Pheak!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:translationY="20dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:translationY="-50dp"
+            android:src="@drawable/notification"
+            android:contentDescription="@string/app_name"
+            />
+
+    <EditText
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Find products and branch..."
+         android:layout_gravity="center"
+        />
+
+<!--3 branch  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+
+                android:layout_marginRight="40dp"
+                android:id="@+id/button_category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dior 1"
+
+                />
+
+            <Button
+                android:layout_marginRight="25dp"
+                android:id="@+id/button_category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neat" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button_category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotha" />
+
+        </LinearLayout>
+    </ScrollView>
+<!--    3 category-->
+    <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="270dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_marginEnd="20dp"
+            >
+            <ImageView
+                android:layout_marginBottom="30dp"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/diorcard"
+                android:id="@+id/img1">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lipstick1"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card_lipstick2"
+            android:layout_gravity="center"
+            android:translationY="-270dp"
+            android:layout_marginStart="10dp"
+            >
+            <ImageView
+                android:layout_marginBottom="30dp"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/diorcard"
+                android:id="@+id/img2">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lipstick2"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="270dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_marginStart="255dp"
+            android:translationY="-540dp"
+            >
+            <ImageView
+                android:layout_marginBottom="30dp"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/diorcard"
+                android:id="@+id/img3">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lipstick3"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+<!--List -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:translationY="-540dp"
+        >
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/diorcard"
+            android:id="@+id/img4">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libstick 3"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$15"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="130dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:translationY="-570dp"
+        >
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/diorcard"
+            android:id="@+id/img5">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libstick 6"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$15"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="130dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
