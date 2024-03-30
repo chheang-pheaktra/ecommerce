@@ -10,4 +10,5 @@
     <item name="product_price1" type="id" />
     <item name="search_bar" type="id" />
     <item name="bottom_navigation" type="id" />
+    <item name="dior1" type="id" />
 </resources>

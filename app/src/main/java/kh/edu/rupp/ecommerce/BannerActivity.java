@@ -1,7 +1,9 @@
 package kh.edu.rupp.ecommerce;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class BannerActivity extends AppCompatActivity {
 
@@ -10,14 +12,17 @@ public class BannerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         onCreate(R.layout.dior1);
 
-        ImageView bannerImage = finalize(R.id.bannerImage);
-    }
-
-    private ImageView finalize(int bannerImage) {
-        return null;
+        ImageView card1 = finalize(R.id.card1);
     }
 
     private void onCreate(int dior1) {
     }
+
+    private ImageView finalize(int card1) {
+        return null;
+    }
+
+
+
 }
 

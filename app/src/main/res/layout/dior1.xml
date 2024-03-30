@@ -1,250 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        >
+        android:padding="10dp"
+        android:gravity="center_vertical">
         <ImageView
             android:id="@+id/icon"
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:src="@drawable/back"
-            android:contentDescription="@string/app_name"
-            />
+            android:contentDescription="@string/app_name"/>
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Dior 1"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textAlignment="center">
-        </TextView>
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"/>
     </LinearLayout>
-    <!-- res/layout/banner_layout.xml -->
+
+    <!-- Banner -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/bannerImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/banner"
-            android:padding="20dp"
-            />
-
+            android:padding="20dp"/>
     </RelativeLayout>
-    <TextView
-        android:layout_width="300dp"
+
+    <!-- Product Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lipstick"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:translationX="30dp"
-        >
-    </TextView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        android:layout_marginStart="30dp"
-        >
-        <ImageView
-            android:layout_marginBottom="100dp"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/diorcard"
-            android:id="@+id/card1">
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        </ImageView>
+        <!-- Product Title -->
         <TextView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:text="ROUGE DIOR"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginStart="30dp"
-            android:textSize="24sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:textSize="20sp" />
-        <TextView
-            android:layout_width="150dp"
+            android:text="Lipstick"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"/>
+
+        <!-- Product Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="$15"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:layout_marginStart="10dp"
-            android:textStyle="bold"/>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        android:layout_marginStart="100dp"
-        android:layout_gravity="center"
-        android:translationY="-400dp"
+            android:orientation="horizontal"
+            >
 
-        >
-        <ImageView
-            android:layout_marginBottom="100dp"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/diorcard"
-            android:id="@+id/card2">
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                android:translationX="-20dp"
+                >
 
-        </ImageView>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:text="ROUGE DIOR"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginStart="30dp"
-            android:textSize="24sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
+                <!-- Card Content -->
+                <!-- Add your ImageView and TextViews here -->
+                <ImageView
+                    android:layout_marginBottom="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/diorcard"
+                    android:id="@+id/card1">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:text="ROUGE DIOR"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="$15"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                android:translationX="-40dp"
+                >
+
+                <!-- Card Content -->
+                <!-- Add your ImageView and TextViews here -->
+                <ImageView
+                    android:layout_marginBottom="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/diorcard"
+                    android:id="@+id/card2">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:text="@string/rouge_dior"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lipstick_satin_finishes_hydrating_floral_lip_care_long_wear"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_15"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+            <!-- Repeat for Card 2, Card 3, and Card 4 -->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:textSize="20sp" />
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="$15"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:layout_marginStart="10dp"
-            android:textStyle="bold"/>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        android:translationY="-400dp"
-        android:layout_marginStart="30dp"
+            android:orientation="horizontal">
 
-        >
-        <ImageView
-            android:layout_marginBottom="100dp"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/diorcard"
-            android:id="@+id/card3">
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                android:translationX="-20dp"
+                >
 
-        </ImageView>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:text="ROUGE DIOR"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginStart="30dp"
-            android:textSize="24sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:textSize="20sp" />
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="$15"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:layout_marginStart="10dp"
-            android:textStyle="bold"/>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="100dp"
-        android:translationY="-800dp"
+                <!-- Card Content -->
+                <!-- Add your ImageView and TextViews here -->
+                <ImageView
+                    android:layout_marginBottom="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/diorcard"
+                    android:id="@+id/card3">
 
-        >
-        <ImageView
-            android:layout_marginBottom="100dp"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/diorcard"
-            android:id="@+id/card4">
+                </ImageView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:text="ROUGE DIOR"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="$15"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="10dp"
+                android:translationX="-40dp"
+                >
 
-        </ImageView>
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:text="ROUGE DIOR"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginStart="30dp"
-            android:textSize="24sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:textSize="20sp" />
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="$15"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:layout_marginStart="10dp"
-            android:textStyle="bold"/>
-    </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_marginBottom="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/diorcard"
+                    android:id="@+id/card4">
 
+                </ImageView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:text="ROUGE DIOR"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Lipstick - Satin Finishes - Hydrating Floral Lip Care - Long Wear"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="$15"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
 
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
